@@ -55,7 +55,7 @@ def save_video(frames, path):
 
 
 if __name__ == '__main__':
-    downlad_dataset('waterfall')
+    # downlad_dataset('waterfall')
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     model = Pix2GifModel(3, 3, device=device)
